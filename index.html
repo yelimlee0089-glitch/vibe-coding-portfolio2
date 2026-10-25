@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Limstage — Art Magazine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Syne:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Limstage</a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#" class="nav__link">Home.</a></li>
+          <li><a href="#" class="nav__link">Pages.</a></li>
+          <li><a href="#" class="nav__link">Works.</a></li>
+          <li><a href="#" class="nav__link">Blog.</a></li>
+          <li><a href="#" class="nav__link">Shop.</a></li>
+          <li><a href="#" class="nav__link">Features.</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn--dark header__cta">Get Limstage Now</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <h1 class="hero__title">
+        <span class="hero__line">Art</span>
+        <span class="hero__line">Magazine</span>
+      </h1>
+    </section>
+
+    <!-- Filter -->
+    <section class="container">
+      <div class="filter">
+        <span class="filter__label">Categories</span>
+        <ul class="filter__list" id="filterList">
+          <li><button class="chip is-active" data-filter="all">All</button></li>
+          <li><button class="chip" data-filter="artblog">Artblog</button></li>
+          <li><button class="chip" data-filter="artwork">Artwork</button></li>
+          <li><button class="chip" data-filter="art">Art</button></li>
+          <li><button class="chip" data-filter="memphis">Memphis</button></li>
+          <li><button class="chip" data-filter="boldcolor">Boldcolor</button></li>
+          <li><button class="chip" data-filter="shape">Shape</button></li>
+          <li><button class="chip" data-filter="lines">Lines</button></li>
+        </ul>
+      </div>
+
+      <!-- Posts grid (rendered by script.js) -->
+      <div class="grid" id="postGrid"></div>
+      <p class="grid__empty" id="emptyMessage" hidden>이 카테고리에는 아직 게시물이 없습니다.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <p>Limstage © Theme</p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Info</h3>
+        <ul class="footer__list">
+          <li><a href="mailto:hello@limstagetheme.com">hello@limstagetheme.com</a></li>
+          <li>Los Angeles, CA 90021</li>
+          <li>United States</li>
+          <li><a href="tel:6469323253">646-932-3253</a></li>
+        </ul>
+      </div>
+      <div class="footer__col footer__col--empty"></div>
+      <div class="footer__col">
+        <h3 class="footer__title">Connect</h3>
+        <ul class="footer__list">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2023</span>, Limstage</span>
+      <span>All rights reserved</span>
+      <span>By Neuronthemes</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
